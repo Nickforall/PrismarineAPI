@@ -61,12 +61,46 @@ public interface Server {
      */
     boolean getOnlineMode();
 
+    //TODO: Documentation
+
+    /**
+     * Gets if Player VS Player is enabled on the server.
+     *
+     * @return Whether PvP is enabled on the server
+     */
     boolean getPvpEnabled();
 
+    /**
+     * Gets if animals are allowed to spawn in the server.
+     *
+     * @return Whether animals are allowed to spawn in the server
+     */
     boolean getAnimalsSpawn();
 
-    boolean getSpawnStructures();
+    /**
+     * Gets if Structures are allowed to generate in the server.
+     *
+     * @return Whether Structures are allowed to generate in the server
+     */
+    boolean getGenerateStructures();
 
+    /**
+     * Gets if flying is enabled on the server
+     *
+     * @return Whether flying is enabled on the server
+     */
     boolean getAllowFlight();
+
+    /**
+     * Sets the Message Of The Day for the server.
+     * @param motd a new "Message of The Day", that is being displayed in a server list
+     */
+    void setMotd(String motd);
+
+    /**
+     * Gets the minecraft version of the current server.
+     * @return The Minecraft version of the current server.
+     */
+    String getServerVersion();
 
 }
