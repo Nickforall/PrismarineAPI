@@ -1,6 +1,6 @@
 package org.prismarine.api.plugin;
 
-public interface JavascriptPlugin {
+public interface JavascriptPluginBase {
 
     /**
      * Called when a plugin has been loaded
