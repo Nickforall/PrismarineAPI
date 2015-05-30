@@ -16,7 +16,7 @@ public interface Server {
      *
      * @return The time the server has been up, in Seconds
      */
-    int getServerUptime();
+    long getServerUptime();
 
     /**
      * Gets the current MessageOfTheDay
@@ -60,8 +60,6 @@ public interface Server {
      * @return Whether the server is using Mojang's authentication servers
      */
     boolean getOnlineMode();
-
-    //TODO: Documentation
 
     /**
      * Gets if Player VS Player is enabled on the server.
