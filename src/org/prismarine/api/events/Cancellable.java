@@ -9,7 +9,7 @@ public interface Cancellable {
     public boolean isCancelled();
 
     /**
-     * Cancels an event
+     * Cancels an event.
      */
     public void cancel();
 }
